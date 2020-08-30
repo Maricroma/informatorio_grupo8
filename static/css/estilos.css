@@ -2,3 +2,26 @@
     margin: 0px;
     padding: 0px;
 }
+
+.imagen {
+    height: 273px;
+    background: url(../imagenes/bienaldigital-copia.jpg);
+    background-size: auto;
+}
+
+.video{
+    height: 450px;
+    width: auto;
+}
+.texto{
+    text-align: justify;
+}
+
+.texto-blanco{
+    color: whitesmoke;
+}
+
+
+footer{
+    height: 100px;
+}
