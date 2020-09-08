@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
 class Paises(models.Model):
-    id_pais=models.IntegerField()
+    id_pais=models.IntegerField(primary_key=True)
     pais=models.TextField(max_length=20)
     def getId(self):
         return self.id_pais
@@ -11,7 +11,7 @@ class Paises(models.Model):
         return self.pais
 
 class Sexo(models.Model):
-    id_sexo=models.IntegerField()
+    id_sexo=models.IntegerField(primary_key=True)
     sexo=models.TextField()
     def getSexo(self):
         return self.sexo
@@ -21,8 +21,8 @@ class Sexo(models.Model):
 class CustomUserForm(UserCreationForm): 
     pass
 
-class Perfil():
-    id=models.IntegerField()
+class Perfil(models.Model):
+    id_perfil=models.IntegerField(primary_key=True)
     user=models.OneToOneField(User, on_delete=models.CASCADE)
     fecha_nacimiento=models.DateField()
     sexo=models.ForeignKey(Sexo, on_delete=models.DO_NOTHING)
