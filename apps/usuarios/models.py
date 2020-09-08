@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+
 
 class Paises(models.Model):
     id_pais=models.IntegerField(primary_key=True)
@@ -18,11 +18,16 @@ class Sexo(models.Model):
     def getId(self):
         return self.id_sexo
 
+<<<<<<< HEAD
 class CustomUserForm(UserCreationForm): 
     pass
 
 class Perfil(models.Model):
     id_perfil=models.IntegerField(primary_key=True)
+=======
+class Perfil():
+    id=models.IntegerField()
+>>>>>>> 2aa2602d851cb2a5f6f706de128afed43f658bca
     user=models.OneToOneField(User, on_delete=models.CASCADE)
     fecha_nacimiento=models.DateField()
     sexo=models.ForeignKey(Sexo, on_delete=models.DO_NOTHING)
