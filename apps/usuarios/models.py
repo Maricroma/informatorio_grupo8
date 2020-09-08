@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+
 
 class Paises(models.Model):
     id_pais=models.IntegerField()
@@ -17,9 +17,6 @@ class Sexo(models.Model):
         return self.sexo
     def getId(self):
         return self.id_sexo
-
-class CustomUserForm(UserCreationForm): 
-    pass
 
 class Perfil():
     id=models.IntegerField()
