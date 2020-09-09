@@ -5,7 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from apps.usuarios.models import CustomUserForm
+from apps.usuarios.forms import CustomUserForm
 from django.http import HttpResponseRedirect
 # Create your views here.
 def Home(request):
