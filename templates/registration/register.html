@@ -10,14 +10,14 @@
 <body>
     {% block main%}
     
-    <h2>Registrar usuario</h2>
+    <h2>Registro</h2>
     <form action="" method="POST">
         {% csrf_token %}
         <table>
             {{form.as_table}}
         </table>
-        <input type="reset" value="limpiar">
-        <input type="submit" value="enviar">
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
     </form>
 
 <hr />

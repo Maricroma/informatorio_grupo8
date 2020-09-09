@@ -14,22 +14,22 @@
 
     <header >
 
-        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #33ACFF;">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #d98cec;">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item mr-4" > 
-                    <a class="btn btn-warning" href="#">Home</a> 
+                    <a class="btn btn-warning" href="{% url 'inicio' %}">Inicio</a> 
                 </li>
                 
                 <li class="nav-item mr-4" >
-                    <a class="btn btn-white" style="background-color: #ff0046;" href="#">Lives!</a> 
+                    <a class="btn btn-white" style="background-color: #ff0046;" href="#">En vivo</a> 
                 </li>
 
                 <li class="nav-item mr-4" >
-                    <a class="btn btn-white" href="#">Inscripciones</a> 
+                    <a class="btn btn-white" style="background-color: #ff0046;" href="#">Inscripciones</a> 
                 </li>
 
                 <li class="nav-item mr-4" >
-                    <a class="btn btn-white" href="#">Ranking</a> 
+                    <a class="btn btn-white" style="background-color: #ff0046;" href="{% url 'mostrarVotos' %}">Ranking</a> 
                 </li>
             </ul>
             <ul class="navbar-nav float-right" >
@@ -38,15 +38,15 @@
                     <a href="#" class="btn btn-outline-danger">Bienvenido {{user.username}}</a>
                 </li>
                 <li class="nav-item mr-4">
-                    <a  class="btn btn-outline-warning" href="{% url 'logout' %}">Log Out</a>
+                    <a  class="btn btn-outline-warning" href="{% url 'logout' %}">Salir</a>
                 </li>
                 {% endif %}
                 <li class="nav-item float-right mr-4" >
-                    <a class=" btn btn-outline-success" href="{%url 'login'%}">Sign In</a> 
+                    <a class=" btn btn-outline-success" href="{%url 'login'%}">Ingresar</a> 
                 </li>
 
                 <li class="nav-item float-right " >
-                    <a class="btn btn-outline-primary   " href="{%url 'register'%}">Sign Up</a> 
+                    <a class="btn btn-outline-primary" href="{%url 'register'%}">Registrarse</a> 
                 </li>
               
             </ul>
