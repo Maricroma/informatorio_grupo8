@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 from apps.usuarios.forms import CustomUserForm
 from django.http import HttpResponseRedirect
 # Create your views here.
-def Home(request):
+def home(request):
     return render(request, 'index.html')
     
 @login_required

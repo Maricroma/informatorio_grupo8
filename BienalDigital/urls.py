@@ -20,8 +20,9 @@ from django.contrib.auth import views as auth
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', view.Home, name='inicio'),
+    path('home/', view.home, name='inicio'),
     path('', view.welcome),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('register/', view.register, name='register')
+    path('register/', view.register, name='register'),
+    path('', include('apps.votos.urls'))
 ]

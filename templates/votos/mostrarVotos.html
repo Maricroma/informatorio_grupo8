@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h1>RANKING</h1>
+
+
+    <table class="table stript-table">
+        <tr>
+            <th><h2>Participante</h2></th>
+            <th><h2>Votos</h2></th>
+        </tr>
+
+        {%  for p in votos %}
+        <tr>
+            <td class="text-white">{{p.participante}}</td>
+            <td class="text-white">{{p.votos}}</td>
+
+        </tr>
+
+        {% endfor %}
+    </table>
+{% endblock %}
