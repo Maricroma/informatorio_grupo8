@@ -1,9 +1,9 @@
+from django.contrib import admin
 from django.urls import path
 from . import views
 
-app_name= 'usuarios'
+
 
 urlpatterns=[
-	#path(),
-    
+	path('registrar/', views.RegistroUsuario.as_view(), name="registrar")
 ]

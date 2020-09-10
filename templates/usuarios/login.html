@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+    {% block titulo %}
+    <title>Bienal Digital: Ingresar</title>
+    {% endblock %}
+
+    {% block main%}
+    <h2>Autenticación</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.errors}}
+        <input type="text" name="username" placeholder="CORREO ELECTRONICO">
+        <input type="password" name="password" placeholder="CONTRASEÑA">
+        <input type="submit" value="Ingresar">
+    </form>
+    {% endblock %}

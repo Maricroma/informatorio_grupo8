@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
     {% extends "base.html" %}
 
-</head>
-<body>
+    {% block titulo%}
+    <title>BienalDigital: Registro</title>
+    {% endblock %}
+
+
     {% block main%}
     
     <h2>Registro</h2>
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <table>
             {{form.as_table}}
@@ -20,10 +17,8 @@
         <input type="submit" value="Enviar">
     </form>
 
-<hr />
+    <hr />  
 
-<a href="/login">Iniciar sesión</a>
+    <a href="login/">Iniciar sesión</a>
     {% endblock %}
     
-</body>
-</html>
