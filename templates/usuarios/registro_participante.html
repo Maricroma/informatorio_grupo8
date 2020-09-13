@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>BienalDigital: Registro de Participantes</title>
+{% endblock %}
+
+{% block main %}
+
+<h1>Registro de Participante</h1>
+{% if messages %}
+{% for message in messages %}
+    alert(message);
+{% endfor %}
+{% endif %}
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

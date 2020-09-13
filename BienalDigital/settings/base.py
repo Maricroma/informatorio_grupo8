@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.usuarios',
     'apps.votos',
+    'apps.perfiles',
 ]
 
 MIDDLEWARE = [

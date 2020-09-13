@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from .models import Voto
-
+from django.http.response import HttpResponse
 # Create your views here.
+
+#mostar votos
 def mostrarVotos(request):
 
     #Esto es un select * from Voto
@@ -25,7 +27,17 @@ def mostrarVotos(request):
     data={
         'votos' : votos
     }
-
-
-
     return render(request, 'votos/mostrarVotos.html', data)
+
+#votar
+
+def votar(request):
+
+    if request.method == 'POST' and request.is_ajax:
+        msg = "The operation  has been recived  correctly "+request.POST
+        print(request.POST)
+    else:
+        msg = "GET petitions are not allowed for tis view"
+
+    return HttpResponse(msg)
+    

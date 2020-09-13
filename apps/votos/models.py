@@ -1,11 +1,13 @@
 from django.db import models
-from django.contrib.auth.models import User
 from apps.usuarios.models import Usuario
 
 
 # Create your models here.
 class Categoria(models.Model):
     categoria = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.categoria
 
 class Voto(models.Model):
     categoria=models.ForeignKey(Categoria, on_delete=models.CASCADE)

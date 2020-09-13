@@ -24,10 +24,11 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', view.inicio, name='inicio'),
-    path('usuario/', view.usuario, name="usuario"),
     path('Login/',auth.LoginView.as_view(template_name="usuarios/login.html"),name="login"),
     path('Logout/',auth.LogoutView.as_view(),name="logout"),
     #url de aplicaciones
     path('', include('apps.usuarios.urls')),
     path('', include('apps.votos.urls')),
+    path('', include('apps.perfiles.urls')),
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

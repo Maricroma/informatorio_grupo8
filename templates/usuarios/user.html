@@ -1,9 +1,21 @@
+{% extends "base.html" %}
 
-    {% extends "base.html" %}
+{% block main %}
 
-    {% block main %}
-    
 
-    
+<div class="card text-center">
+    <div class="card-header">
+        <h1>Bienvenido {{user.username}}</h1>
+        <p>id: {{user.id}}</p>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Seccion de usuario: {{user.participante}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+        6 days ago
+    </div>
+</div>
 
-    {% endblock %}
+{% endblock %}

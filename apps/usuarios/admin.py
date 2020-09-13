@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Usuario, Perfil
+from .models import Usuario, Paises, Sexo
 # Register your models here.
 
 admin.site.register(Usuario)
-admin.site.register(Perfil)
+admin.site.register(Paises)
+admin.site.register(Sexo)
