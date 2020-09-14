@@ -1,24 +1,27 @@
-    {% extends "base.html" %}
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
 
-    {% block titulo%}
-    <title>BienalDigital: Registro</title>
-    {% endblock %}
+{% block titulo%}
+<title>BienalDigital: Registro</title>
+{% endblock %}
 
 
-    {% block main%}
-    
-    <h2>Registro</h2>
-    <form action="" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        <table>
-            {{form.as_table}}
-        </table>
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Enviar">
-    </form>
-
-    <hr />  
-
-    <a href="login/">Iniciar sesión</a>
-    {% endblock %}
-    
+{% block main%}
+<br>
+<div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+                <h2 class="text-light" >Registro</h2>
+                <form class="text-light" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                    {{ form | crispy }}
+                    <input class="btn btn-danger" type="reset" value="Borrar">
+                    <input class="btn btn-success" type="submit" value="Enviar"><br>
+                    <div class="float-right"><br>
+                        <a class="btn btn-primary" href="login/">Iniciar sesión</a>    
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+<br>  
+{% endblock %}
