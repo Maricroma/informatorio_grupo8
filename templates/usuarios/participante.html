@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 
-{% block main%}
-<h1>Paricipante</h1>
+{% block main %}
+
+<h1>Agregar Participante</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+</form>
+
 {% endblock %}
