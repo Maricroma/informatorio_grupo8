@@ -11,6 +11,7 @@
 </head>
 <body class="bg-dark">
     {% block header %}
+<<<<<<< HEAD
 
     <header >
 
@@ -57,6 +58,28 @@
 
        </div>
 
+=======
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="btn btn-dark" href="{% url 'inicio' %}">Inicio</a></li>
+                    <li class="nav-item"><a class="btn btn-dark" href="{% url 'registroParticipante' %}">Participar</a></li>
+                    <li class="nav-item"><a class="btn btn-dark" href="{% url 'mostrarVotos' %}">Ranking</a></li>
+                    <li class="nav-item"><a class="btn btn-danger" href="#">En vivo</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a  class="btn btn-outline-danger" href="{% url 'usuario' %}">Bienvenido {{user.username}}</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-warning" href="{% url 'logout' %}">Salir</a></li>
+                    {% endif %}
+                    <li class="nav-item"><a class=" btn btn-outline-success" href="{%url 'login'%}">Ingresar</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary" href="{%url 'registrar'%}">Registrarse</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <img src="/static/imagenes/bienaldigital-copia.jpg" class="img-fluid" alt="Responsive image" width="100%">
+>>>>>>> f75df50d4825657983dcb82f40b40e7bfedeaca7
     </header>
     {% endblock %}
 
@@ -67,12 +90,34 @@
     </main>
     {% endblock%}
     {% block footer %}
-    <footer class="footer" style="background-color: #740093;">
-
+    <footer class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6>ÚLTIMAS NOVEDADES</h6>
+                    <a class="text-light" href="#">Noticia 1</a><br>
+                    <a class="text-light" href="#">Noticia 2</a><br>
+                    <a class="text-light" href="#">Noticia 3</a><br>
+                </div>
+                <div class="col-lg-4">
+                    <h6>OTRAS SECCIONES</h6>
+                    <a class="text-light" href="#">Contacto</a><br>
+                    <a class="text-light" href="#">Testimoniales</a><br>
+                    <a class="text-light" href="#">Como llegar</a><br>
+                </div>
+                <div class="col-lg-4">
+                    <h6>SEGUINOS</h6>
+                    <a class="text-light" href="#">Facebook</a><br>
+                    <a class="text-light" href="#">Instagram</a><br>
+                    <a class="text-light" href="#">YouTube</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
         <script src="../static/js/jquery-3.5.1.slim.min.js"></script>
         <script src="../static/js/bootstrap.min.js"></script>
         <script src="../static/js/popper.min.js"></script>
-    </footer>
+    
     {% endblock %}
 </body>
 </html>

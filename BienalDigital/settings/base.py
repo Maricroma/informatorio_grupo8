@@ -27,6 +27,8 @@ LOGIN_REDIRECT_URL= reverse_lazy('inicio')
 LOGOUT_REDIRECT_URL= reverse_lazy('login')
 LOGIN_URL = reverse_lazy('login')
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'apps.usuarios',
     'apps.votos',
     'apps.perfiles',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
