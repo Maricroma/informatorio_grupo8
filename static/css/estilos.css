@@ -10,7 +10,15 @@
 }
 
 .video{
-    height: 350px;
+    transform:rotate(-450deg);
+    transform-origin: bottom right;
+    width: 100vh;
+    height: 100vw;
+    margin-top: -100vw;
+    margin-left: 20vw;
+    object-fit: cover;
+    visibility: visible;
+    height: 600px;
     width: auto;
 }
 .texto{
