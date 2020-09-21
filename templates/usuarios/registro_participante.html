@@ -16,7 +16,8 @@
     				alert(message);
 				{% endfor %}
 				{% endif %}
-                <form class="text-light" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                <form class="text-light" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
                     {{ form | crispy }}
                     <input class="btn btn-danger" type="reset" value="Borrar">
                     <input class="btn btn-success" type="submit" value="Enviar"><br>

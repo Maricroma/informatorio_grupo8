@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block main %}
-
-<h1>Agregar Participante</h1>
-<form action="" method="POST">
-    {% csrf_token %}
-    <table>
-        {{form.as_table}}
-    </table>
-    <input type="reset" value="Borrar">
-    <input type="submit" value="Enviar">
-</form>
-
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-8">
+            <h2 class="text-light">Agregar Participante</h2>
+            <form class="text-light" method="POST">{% csrf_token %}
+                <table>
+                    {{ form|crispy }}<br>
+                </table>
+                <input class="btn btn-danger" type="reset" value="Borrar">
+                <input class="btn btn-success" type="submit" value="Enviar"><br>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
