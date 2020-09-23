@@ -13,8 +13,8 @@
 <body class="bg-dark">
     {% block header %}
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'inicio' %}" style="background-color:#9700f9;"><i class="fas fa-home"></i> Inicio</a></li>
                     <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'registroParticipante' %}" style="background-color:#9700f9;"><i class="fas fa-file-signature"></i> Participar</a></li>
@@ -64,10 +64,24 @@
                     <a class="text-light" href="#">Como llegar</a><br>
                 </div>
                 <div class="col-lg-4">
-                    <h6>SEGUINOS</h6>
-                    <a class="text-light" href="#">Facebook</a><br>
-                    <a class="text-light" href="#">Instagram</a><br>
-                    <a class="text-light" href="#">YouTube</a><br>
+                    <div class="container">
+                        <ul class="navbar-nav float-right">
+                            <li class="nav-item mr-4">
+                                <h6>SEGUINOS</h6>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="text-dark" href="#"><i class="fab fa-facebook-square fa-lg"  style="background-color: #0038ba;"></i> Facebook</a><br>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="text-dark" href="#" > <i class="fab fa-instagram-square fa-lg" style="color: #ba008d;"></i> Instagram</a><br>
+                            </li>
+                            <li class="nav-item float-right">
+                                <a class="text-dark" href="#"><i class="fab fa-youtube-square fa-lg"  style="color: #ba1400;"></i> YouTube</a><br>
+                            </li>
+                        </ul>
+                                
+                    </div>
+                    
                 </div>
             </div>
         </div>
