@@ -41,3 +41,26 @@ def votar(request):
 
     return HttpResponse(msg)
     
+def votar_ajax(request):
+    data = request.POST #Guarda los datos recibidos por el método POST en la variable data
+    id_video = data['id_video'] #Extrae del dicc data el valor con la key 'id_video'
+    id_votante = data['id_usuario'] #Extrae del dicc data el valor con la key 'id_usuario'
+
+    usuario_votante = Usuario.objects.get(id = id_votante) #obtiene de la DB una instancia del Usuario que votó con los datos del votante
+    participante = PerfilParticipante.objects.get(id=id_video) #obtiene de la DB una instancia del PerfilParticipante 
+    usuario_participante = Usuario.objects.get(id=participante.usuario_id) #con el id del perfil participante obtenemos una instancia del usuario en DB que participa
+    categoria = Categoria.objects.get(categoria=participante.categoria) #con la categoria en el perfil participante obtenemos de la DB una instancia de la categoria en la que participa el mismo
+    respuesta = {} #se crea un dicc vacio que contendrá las respuestas a devolver al ajax
+
+    voto = Voto()
+    voto.categoria = categoria
+    voto.votado = usuario_participante
+    voto.votante = usuario_votante
+    try:
+        voto.save()
+        respuesta = {'id_video': id_video, 'estado': 'ok'}
+    except:
+        respuesta = {'estado': 'error'}
+
+    data = json.dumps(respuesta)
+    return HttpResponse(data, 'application/json')
