@@ -14,40 +14,54 @@
     </div>
     <div class="card-body">
         {% if user.participante %}
-        <h2 class="card-title">Seccion de participante</h2>
-        <h3>Categoria : {{perfil.categoria}} id {{perfil.id}}</h3>
+        <h2 class="card-title">Seccion para participantes</h2>
+        <h3>Categoria : {{perfil.categoria}}</h3>
         <p class="card-text">En esta sección podran modificar la cantidad de integrandes del grupo, 
             agregarlos, eliminarlos, dar de baja el grupo, entre otras funciones.
         </p>
         <a href="{% url 'participante' %}" class="btn btn-primary float-left">Agregar miembro</a>
         
         <a href="#">{{grupo.directo}}</a>
-        {% endif %}
     </div>
-    {% for participante in participantes %}
-    <div class="card-body">
-        <div class="container">
-            <div class="col">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-16">
-                    <p class="text-left">Nombre: {{participante.nombre}} </p>
-                    <p class="text-left">Apellido: {{participante.apellido}}</p>
-                    <p class="text-left">Edad: {{participante.edad}}</p>
-                    <p class="text-left">Sexo: {{participante.sexo}}</p>
-                    <p class="text-left">Dni: {{participante.dni}}</p>
-                    <p class="text-left">Nacionalidad: {{participante.nacionalidad}}</p>
-                    <p class="text-left">Domicilio: {{participante.domicilio}}</p>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-        
-    </div>
-    {% endfor %}
-    <div class="card-footer text-muted">
-        6 days ago
-    </div>
+    {% if participantes%}
+    <table class="table" style="background-color: #a7a7a7;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Dni</th>
+                <th>Nacionalidad</th>
+                <th>Domicilio</th>
+                <th>Eliminar</th>
+                <th>Editar</th>
+            </tr>
+            <tbody>
+                {% for participante in participantes %}
+                <tr>
+                    <th>{{participante.nombre}}</th>
+                    <th>{{participante.apellido}}</th>
+                    <th>{{participante.edad}}</th>
+                    <th>{{participante.sexo}}</th>
+                    <th>{{participante.dni}}</th>
+                    <th>{{participante.nacionalidad}}</th>
+                    <th>{{participante.domicilio}}</th>
+                    <th><a class="btn-sm btn-danger" href=# onclick="confirmarEliminacion({{participante.id}})"> eliminar</a></th>
+                    <th><a class="btn-sm btn-warning" href="{% url 'modificar_participante' participante.id %}">Editar</a></th>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </thead>
+    </table>
+    {% endif %}
+    {% endif %}
+
 </div>
 
+{% endblock %}
+
+{% block extras_js %}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="../static/js/eliminar.js"></script>
 {% endblock %}
