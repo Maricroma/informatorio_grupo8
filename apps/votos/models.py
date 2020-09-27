@@ -16,3 +16,6 @@ class Voto(models.Model):
 
     class Meta:
         unique_together = ("votante", "categoria")
+
+    def __str__(self):
+        return self.categoria

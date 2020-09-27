@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+    {% block titulo %}
+    <title>Bienal Digital: Contacto</title>
+    {% endblock %}
+
+    {% block main%}
+
+    <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8">
+                    <h2 class="text-light" >Envianos tu consulta</h2>
+                    <form id="mensajeForm" class="text-light" method="post" action=""  >
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                        <input class="btn btn-danger" type="reset" value="Borrar">
+                        <input class="btn btn-success" type="button" value="Enviar" onclick="confirmarMensaje()" ><br>
+                        <div class="float-right"><br>  
+                    </form>
+                </div>
+            </div>
+    </div>
+    <br>  
+
+    {% endblock %}
+
+    {% block extras_js %}
+        <script src="../static/js/confirmacion.js"></script>
+        <script src="../static/js/sweetalert2@10.js"></script>
+    {% endblock %}

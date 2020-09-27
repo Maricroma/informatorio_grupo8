@@ -30,5 +30,10 @@ urlpatterns = [
     path('', include('apps.usuarios.urls')),
     path('', include('apps.votos.urls')),
     path('', include('apps.perfiles.urls')),
+    path('', include('apps.contacto.urls')),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Bienal Digital - Administración'
+admin.site.index_title = 'Módulos de Administración'
+admin.site.site_title = 'Bienal Digital'
