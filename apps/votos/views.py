@@ -1,14 +1,19 @@
 from django.shortcuts import render
-from .models import Voto
+from .models import Voto, Categoria
+from apps.perfiles.models import PerfilParticipante
+from apps.usuarios.models import Usuario
 from django.http.response import HttpResponse
 import json
 # Create your views here.
 
 #mostar votos
-def mostrarVotos(request):
-
-    #Esto es un select * from Voto
-    votos=Voto.objects.all()
+def mostrarVotos(request, id):
+    votos=None
+    if id==0:
+        votos = Voto.objects.all()
+    else:
+        votos = Voto.objects.get(id=id)
+    categorias = Categoria.objects.all()
     votosContados=[]
     nombresParticipantes=[]
     for voto in votos:
@@ -23,13 +28,12 @@ def mostrarVotos(request):
     votos= []
     for x in range(len(nombresParticipantes)):
         votos.append({'participante':nombresParticipantes[x], 'votos':votosContados[x]})
-        
            
     data={
-        'votos' : votos
+        'votos' : votos,
+        'categorias':categorias,
     }
     return render(request, 'votos/mostrarVotos.html', data)
-
 #votar
 
 def votar(request):

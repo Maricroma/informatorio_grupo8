@@ -1,10 +1,17 @@
 {% extends 'base.html' %}
 
 {% block main %}
-    <h1>RANKING</h1>
+<div class="container-fluid">
+        <h1>RANKING</h1>
+        <a class="btn btn-warning" href="{% url 'mostrarVotos' %}">Todos</a>
+        {% for c in categorias %}
+        <button class="btn btn-success" id="{{c.id}}">{{c}}</button>
+        {% endfor %}
+</div>
 
 
-    <table class="table stript-table">
+<div class="container">
+    <table id="tabla" class="table stript-table mt-2">
         <tr>
             <th><h2>Participante</h2></th>
             <th><h2>Votos</h2></th>
@@ -19,4 +26,5 @@
 
         {% endfor %}
     </table>
+</div>
 {% endblock %}
