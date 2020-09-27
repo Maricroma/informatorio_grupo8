@@ -4,16 +4,21 @@ from apps.votos.models import Categoria
 # Create your models here.
 class PerfilVisitante(models.Model):
     usuario = models.OneToOneField(Usuario, related_name="usuario_visitante", on_delete=models.CASCADE)
-    sexo=models.ForeignKey(Sexo, on_delete=models.DO_NOTHING, null=True)
-    nacionalidad= models.ForeignKey(Paises, on_delete=models.DO_NOTHING, null=True)
+    sexo = models.ForeignKey(Sexo, on_delete=models.DO_NOTHING, null=True)
+    nacionalidad = models.ForeignKey(Paises, on_delete=models.DO_NOTHING, null=True)
     edad = models.IntegerField( null=True)
-    #fecha_nacimiento=models.DateField
+
+    def __str__(self):
+        return self.usuario
 
 
 class PerfilParticipante(models.Model):
     usuario = models.OneToOneField(Usuario, related_name="usuario_participante", on_delete=models.CASCADE)
     categoria = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING, null=True)
     directo = models.TextField(max_length=200, null=True)
+
+    def __str__(self):
+        return self.usuario
 
 class Participantes(models.Model):
     grupoParticipante =  models.ForeignKey(PerfilParticipante, related_name="participante", on_delete=models.CASCADE)
@@ -24,3 +29,6 @@ class Participantes(models.Model):
     dni = models.IntegerField()
     nacionalidad= models.ForeignKey(Paises, on_delete=models.DO_NOTHING, null=True)
     domicilio = models.TextField(max_length=500)
+
+    def __str__(self):
+        return str(self.dni)
