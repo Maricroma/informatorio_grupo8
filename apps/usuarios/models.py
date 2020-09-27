@@ -18,7 +18,7 @@ class Usuario(AbstractUser):
     email = models.EmailField(unique=True, max_length=80)
     participante= models.BooleanField(default=False)
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['USERNAME']    
+    REQUIRED_FIELDS = ['username']    
 
 
     def __str__(self):

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Voto
 from django.http.response import HttpResponse
+import json
 # Create your views here.
 
 #mostar votos
@@ -49,18 +50,24 @@ def votar_ajax(request):
     usuario_votante = Usuario.objects.get(id = id_votante) #obtiene de la DB una instancia del Usuario que votó con los datos del votante
     participante = PerfilParticipante.objects.get(id=id_video) #obtiene de la DB una instancia del PerfilParticipante 
     usuario_participante = Usuario.objects.get(id=participante.usuario_id) #con el id del perfil participante obtenemos una instancia del usuario en DB que participa
-    categoria = Categoria.objects.get(categoria=participante.categoria) #con la categoria en el perfil participante obtenemos de la DB una instancia de la categoria en la que participa el mismo
     respuesta = {} #se crea un dicc vacio que contendrá las respuestas a devolver al ajax
 
-    voto = Voto()
-    voto.categoria = categoria
-    voto.votado = usuario_participante
-    voto.votante = usuario_votante
-    try:
-        voto.save()
-        respuesta = {'id_video': id_video, 'estado': 'ok'}
-    except:
-        respuesta = {'estado': 'error'}
+    if id_votante != usuario_participante.id:
+
+        categoria = Categoria.objects.get(categoria=participante.categoria) #con la categoria en el perfil participante obtenemos de la DB una instancia de la categoria en la que participa el mismo
+
+        voto = Voto()
+        voto.categoria = categoria
+        voto.votado = usuario_participante
+        voto.votante = usuario_votante
+
+        try:
+            voto.save()
+            respuesta = {'id_video': id_video, 'estado': 'ok'}
+        except:
+            respuesta = {'estado': 'error'}
+    else:
+        respuesta={'estado':'No podes votarte vos mismo!!'}
 
     data = json.dumps(respuesta)
     return HttpResponse(data, 'application/json')
