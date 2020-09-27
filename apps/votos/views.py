@@ -6,13 +6,13 @@ from django.http.response import HttpResponse
 import json
 # Create your views here.
 
-#mostar votos
+#mostar votos   
 def mostrarVotos(request, id):
     votos=None
     if id==0:
         votos = Voto.objects.all()
     else:
-        votos = Voto.objects.get(id=id)
+        votos = Voto.objects.get(categoria_id=id)
     categorias = Categoria.objects.all()
     votosContados=[]
     nombresParticipantes=[]
