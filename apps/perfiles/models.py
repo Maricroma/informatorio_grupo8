@@ -22,13 +22,13 @@ class PerfilParticipante(models.Model):
 
 class Participantes(models.Model):
     grupoParticipante =  models.ForeignKey(PerfilParticipante, related_name="participante", on_delete=models.CASCADE)
-    nombre = models.TextField(max_length=30)
-    apellido = models.TextField(max_length=30)
+    nombre = models.CharField(max_length=30)
+    apellido = models.CharField(max_length=30)
     edad = models.IntegerField()
     sexo = models.ForeignKey(Sexo, on_delete=models.DO_NOTHING, null=True)
     dni = models.IntegerField()
     nacionalidad= models.ForeignKey(Paises, on_delete=models.DO_NOTHING, null=True)
-    domicilio = models.TextField(max_length=500)
+    domicilio = models.CharField(max_length=200)
 
     def __str__(self):
-        return str(self.dni)
+        return self.nombre

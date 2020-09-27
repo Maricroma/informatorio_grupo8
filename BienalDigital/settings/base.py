@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'apps.usuarios',
     'apps.votos',
     'apps.perfiles',
+    'apps.contacto',
     'crispy_forms',
 ]
 

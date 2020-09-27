@@ -9,6 +9,7 @@ class PerfilParticipanteAdmin(admin.ModelAdmin):
 class ParticipantesAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'apellido', 'dni', 'domicilio')
     search_fields = ('nombre', 'apellido', 'dni') #buscar por nombre, apellido o dni
+    list_per_page = 10
     
 
 

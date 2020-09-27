@@ -3,13 +3,13 @@ from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 
 class Paises(models.Model):
-    pais=models.TextField(max_length=20)
+    pais=models.CharField(max_length=20)
     
     def __str__(self):
         return self.pais
         
 class Sexo(models.Model):
-    sexo=models.TextField()
+    sexo=models.CharField(max_length=10)
     
     def __str__(self):
         return self.sexo
