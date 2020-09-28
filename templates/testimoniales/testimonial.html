@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/newstilos.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <title>Testimoniales</title>
+</head>
+<body class="bg-secondary">
+    <header>
+        <div class="container-fluid">
+            <nav id="main" class="navbar navbar-expand-lg">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-4"><a class="btn btn-secondary" href="{% url 'inicio' %}">INICIO</a></li>
+                    <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'registroParticipante' %}"
+                            style="background-color:#9700f9;"><i class="fas fa-file-signature"></i> Participar</a></li>
+                    <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'mostrarVotos' 0 %}"
+                            style="background-color:#9700f9;"><i class="fas fa-trophy"></i> Ranking</a></li>
+                    <li class="nav-item mr-4"><a class="btn btn-danger" href="#"> <i class="fas fa-video"></i> En vivo</a></li>
+                </ul>
+                <ul class="navbar-nav float-right">
+                    {% if user.is_authenticated %}
+                    {% if user.participante%}
+                    <li class="nav-item mr-2"><a class="btn btn-outline-success" href="{% url 'usuario' %}"><i
+                                class="fas fa-users-cog"></i> Bienvenido {{user.username}}</a></li>
+                    {% endif %}
+                    {% if not user.participante%}
+                    <li class="nav-item mr-2"><a class="btn btn-outline-success" href="{% url 'usuario' %}"><i
+                                class="fas fa-user-cog"></i> Bienvenido {{user.username}}</a></li>
+                    {% endif %}
+                    <li class="nav-item mr-4"><a class="btn btn-outline-danger" href="{% url 'logout' %}"><i
+                                class="fas fa-user-times"></i> Salir</a></li>
+                    {% endif %}
+                    {% if not user.is_authenticated %}
+                    <li class="nav-item mr-4"><a class=" btn btn-outline-success" href="{% url 'login' %}"><i
+                                class="fas fa-user-alt"></i> Ingresar</a></li>
+                    <li class="nav-item float-right"><a class="btn btn-outline-primary" href="{% url 'registrar' %}"> <i
+                                class="fas fa-user-plus"></i> Registrarse</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bg-dark">
+        <div id="div">
+            <h3>Testimoniales</h3>
+        </div>
+    </div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h4>Julia Farjat</h4>
+            </div>
+            <div class="col-9">
+                <p id="texto"><b>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, quas optio. Nobis delectus totam molestias aperiam, quasi repudiandae perspiciatis itaque mollitia consectetur, nulla id ad odio earum, quis rem atque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque sint alias. Commodi voluptatum officia asperiores. Iure expedita doloribus numquam, ex quae, quod at rerum temporibus, dignissimos magnam tempore magni!
+                </p></b>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer class="bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6>ÚLTIMAS NOVEDADES</h6>
+                        <a class="text-light" href="#">Noticia 1</a><br>
+                        <a class="text-light" href="#">Noticia 2</a><br>
+                        <a class="text-light" href="#">Noticia 3</a><br>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>OTRAS SECCIONES</h6>
+                        <a class="text-light" href="{% url 'contacto' %}">Contacto</a><br>
+                        <a class="text-light" href="{% url 'testimonial' %}">Testimoniales</a><br>
+                        <a class="text-light" href="#">Como llegar</a><br>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="container">
+                            <ul class="navbar-nav float-right">
+                                <li class="nav-item mr-4">
+                                    <h6>SEGUINOS</h6>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="text-dark" href="#"><i class="fab fa-facebook-square fa-lg"
+                                            style="background-color: white; color: #0030ba"></i> Facebook</a><br>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="text-dark" href="#"> <i class="fab fa-instagram-square fa-lg"
+                                            style="color: #a300ba; background-color: white;"></i> Instagram</a><br>
+                                </li>
+                                <li class="nav-item float-right">
+                                    <a class="text-dark" href="#"><i class="fab fa-youtube-square fa-lg"
+                                            style="background-color: #ba1400; color: white;"></i> YouTube</a><br>
+                                </li>
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+</body>
+</html>
