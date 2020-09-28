@@ -4,6 +4,16 @@ from apps.perfiles.models import PerfilParticipante
 from apps.usuarios.models import Usuario
 from django.http.response import HttpResponse
 import json
+import operator
+
+import logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('ejemplo_Log')
+logger.setLevel(logging.DEBUG)
+fh = logging.FileHandler('debug.log')
+fh.setLevel(logging.DEBUG)
+logger.addHandler(fh)
+
 # Create your views here.
 
 #mostar votos   
@@ -12,7 +22,7 @@ def mostrarVotos(request, id):
     if id==0:
         votos = Voto.objects.all()
     else:
-        votos = Voto.objects.get(categoria_id=id)
+        votos = Voto.objects.filter(categoria_id=id)
     categorias = Categoria.objects.all()
     votosContados=[]
     nombresParticipantes=[]
@@ -28,9 +38,9 @@ def mostrarVotos(request, id):
     votos= []
     for x in range(len(nombresParticipantes)):
         votos.append({'participante':nombresParticipantes[x], 'votos':votosContados[x]})
-           
+    votosOrdenados = sorted(votos, key=lambda x: x['votos'], reverse=True)
     data={
-        'votos' : votos,
+        'votos' : votosOrdenados,
         'categorias':categorias,
     }
     return render(request, 'votos/mostrarVotos.html', data)
