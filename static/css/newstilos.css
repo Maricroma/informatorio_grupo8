@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    height: 100px;
+}
+
+#div {
+    padding: 20px;
+    margin-left: 50px;
+    color: white;
+}
+
+#texto {
+    padding: 20px;
+    text-align: justify;
+}
