@@ -1,6 +1,4 @@
 function cambiar(categoria){
-    $(document).ready(function(categoria) {
-
 
         if (categoria == "madera"){
             alert("hola")
@@ -30,5 +28,5 @@ function cambiar(categoria){
         }
     
       
-    });
+    
 }
