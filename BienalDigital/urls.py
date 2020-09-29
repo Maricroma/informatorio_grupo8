@@ -33,6 +33,7 @@ urlpatterns = [
     path('', include('apps.perfiles.urls')),
     path('', include('apps.contacto.urls')),
     path('', include('apps.testimoniales.urls')),
+    path('', include('apps.enVivos.urls')),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

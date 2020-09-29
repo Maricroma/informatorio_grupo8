@@ -45,3 +45,13 @@ function confirmarMensaje() {
   });
 
 }
+
+function confrimarRegistro(mensaje){
+  Swal.fire({
+    position: 'top',
+    icon: 'success',
+    title: mensaje,
+    showConfirmButton: false,
+    timer: 1500
+  })
+}

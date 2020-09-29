@@ -23,3 +23,55 @@ hola
 <QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
 [{'participante': 'Le Correntinos', 'votos': 1}, {'participante': 'EL chaqueño', 'votos': 1}, {'participante': 'informatorio', 'votos': 1}, {'participante': 'Los piratas', 'votos': 1}]
 <QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+madera
+madera
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+madera
+madera
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena

@@ -20,7 +20,7 @@ class RegistroUsuario(CreateView):
     form_class = RegistroUsuarioForm
     template_name = 'usuarios/registro.html'
     success_url = reverse_lazy('login')
-    success_message = "El usuario %(username)s creado con exito!!"
+    success_message = "Usuario %(username)s creado con exito!!"
 
 
 @login_required

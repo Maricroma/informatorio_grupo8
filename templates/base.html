@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../static/fontawesome/css/all.css">
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     {% endblock %}
+
+    {% block titulo %}
     <title>Bienal Digital</title>
+    {% endblock %}
+
 </head>
 <body class="bg-dark">
     {% block header %}
@@ -19,7 +23,7 @@
                     <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'inicio' %}" style="background-color:#9700f9;"><i class="fas fa-home"></i> Inicio</a></li>
                     <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'registroParticipante' %}" style="background-color:#9700f9;"><i class="fas fa-file-signature"></i> Participar</a></li>
                     <li class="nav-item mr-4"><a class="btn btn-white" href="{% url 'mostrarVotos' 0 %}" style="background-color:#9700f9;"><i class="fas fa-trophy"></i> Ranking</a></li>
-                    <li class="nav-item mr-4"><a class="btn btn-danger" href="#"> <i class="fas fa-video"></i> En vivo</a></li>
+                    <li class="nav-item mr-4"><a class="btn btn-danger" href="{% url 'en_vivos' 0 %}"> <i class="fas fa-video"></i> En vivo</a></li>
                 </ul>
                 <ul class="navbar-nav float-right">
                     {% if user.is_authenticated %}
@@ -39,25 +43,38 @@
             </nav>
         </div>
         {% if categoria == "todos" %}
-        <img src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; " 
+            src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "madera" %}
-        <img src="/static/imagenes/madera2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; " 
+            src="/static/imagenes/madera2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "pintura" %}
-        <img src="/static/imagenes/pinturas.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; " 
+            src="/static/imagenes/pinturas.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "metal" %}
-        <img src="/static/imagenes/metal.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; " 
+            src="/static/imagenes/metal.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "piedra" %}
-        <img src="/static/imagenes/pidra2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; " 
+            src="/static/imagenes/pidra2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "concreto" %}
-        <img src="/static/imagenes/concreto.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; "
+            src="/static/imagenes/concreto.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "artesania" %}
-        <img src="/static/imagenes/artesanias.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; "
+            src="/static/imagenes/artesanias.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "arena" %}
-        <img src="/static/imagenes/arena.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; "
+            src="/static/imagenes/arena.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% else %}
-        <img src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        <img style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; "
+            src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% endif %}
     </header>
+    {% endblock %}
+
+    {%block titulo_cabecera%}
+
     {% endblock %}
 
     {% block main %}
@@ -71,20 +88,20 @@
         <hr class="bg-white ml-3 mr-3" size=3>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3 mx-5">  
                     <a class="text-light" href="#">Programa</a><br>
                     <a class="text-light" href="#">Participantes</a><br>
                     <a class="text-light" href="#">Premio Desafío</a><br>
                     <a class="text-light" href="#">Términos y condiciones</a><br>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3 mx-5">
                     <a class="text-light" href="{% url 'contacto' %}">Contacto</a><br>
                     <a class="text-light" href="{% url 'historia' %}">Resistencia, Ciudad de las Esculturas</a><br>
                     <a class="text-light" href="http://www.fundacionurunday.org/" target="_blank">Fundación Urunday</a><br>
                     <a class="text-light" href="https://chaco.gov.ar/" target="_blank">Chaco, Gobierno de Todos</a><br>
                     
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3 mx-5">
                     <div class="container">
                         <ul class="navbar-nav float-right">
                             <li class="nav-item mr-4">
