@@ -26,6 +26,7 @@ urlpatterns = [
     path('', view.inicio, name='inicio'),
     path('Login/',auth.LoginView.as_view(template_name="usuarios/login.html"),name="login"),
     path('Logout/',auth.LogoutView.as_view(),name="logout"),
+    path('Ciudad/', view.historia, name='historia'),
     #url de aplicaciones
     path('', include('apps.usuarios.urls')),
     path('', include('apps.votos.urls')),

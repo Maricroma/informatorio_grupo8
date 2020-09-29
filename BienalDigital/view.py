@@ -6,4 +6,9 @@ from django.contrib.auth import logout as do_logout
 def inicio(request):
 
     return render(request, 'index.html')
+    
+
+def historia(request):
+
+    return render(request, 'historia.html')
 
