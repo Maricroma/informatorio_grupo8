@@ -26,7 +26,7 @@
 				<h3 class="text-center">{{p}}</h3>
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/{{p.directo}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            	<input type="submit" id="{{p.id}}" onclick="votar({{user.id}}, {{p.id}})" value="votar" class="btn btn-primary">
+            	<input type="submit" id="{{p.id}}" onclick="confirmarVoto({{user.id}}, {{p.id}})" value="votar" class="btn btn-primary">
             	<p> {% csrf_token %}</p>
 
 			</div>
@@ -39,4 +39,6 @@
 
 {% block extras_js%}
 	<script src="../static/js/ajax_votar"></script>
+	<script src="../static/js/confirmacion.js"></script>
+    <script src="../static/js/sweetalert2@10.js"></script>
 {% endblock%}

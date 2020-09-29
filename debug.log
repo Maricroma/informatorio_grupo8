@@ -159,3 +159,21 @@ todos
 todos
 <QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
 <QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>

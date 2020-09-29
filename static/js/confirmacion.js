@@ -8,11 +8,14 @@ function confirmarVoto(user_id, video_id) {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí, estoy seguro',
+        confirmButtonText: 'Sí, votar',
         cancelButtonText: 'Cancelar'
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire(
+            'Hecho!',
+            'Tu voto ha sido registrado.',
+            'success',
             votar(user_id, video_id)
           )
         }
