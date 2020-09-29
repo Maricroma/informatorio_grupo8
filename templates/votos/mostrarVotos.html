@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block main %}
+
 <div class="container-fluid">
         <h1 class="text-center">RANKING</h1>
         <a class="btn btn-warning" href="{% url 'mostrarVotos' 0 %}">Todos</a>
@@ -27,4 +28,10 @@
         {% endfor %}
     </table>
 </div>
+
+{% endblock %}
+
+
+{% block extras_js %}
+    
 {% endblock %}

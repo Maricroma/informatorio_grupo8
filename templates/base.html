@@ -38,7 +38,25 @@
                 </ul>
             </nav>
         </div>
-        <img src="/static/imagenes/bienaldigital-copia.jpg" class="img-fluid" alt="Responsive image" width="100%">
+        {% if categoria == "todos" %}
+        <img src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "madera" %}
+        <img src="/static/imagenes/madera2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="90%">
+        {% elif categoria  == "pintura" %}
+        <img src="/static/imagenes/pinturas.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "metal" %}
+        <img src="/static/imagenes/metal.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "piedra" %}
+        <img src="/static/imagenes/pidra2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "concreto" %}
+        <img src="/static/imagenes/concreto.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "artesania" %}
+        <img src="/static/imagenes/artesanias.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% elif categoria  == "arena" %}
+        <img src="/static/imagenes/arena.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% else %}
+        <img src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
+        {% endif %}
     </header>
     {% endblock %}
 

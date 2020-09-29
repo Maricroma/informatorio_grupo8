@@ -19,10 +19,13 @@ logger.addHandler(fh)
 #mostar votos   
 def mostrarVotos(request, id):
     votos=None
+    categoria = "todos"
     if id==0:
         votos = Voto.objects.all()
     else:
         votos = Voto.objects.filter(categoria_id=id)
+        categoria = Categoria.objects.get(id = id)
+        categoria = categoria.categoria
     categorias = Categoria.objects.all()
     votosContados=[]
     nombresParticipantes=[]
@@ -42,6 +45,7 @@ def mostrarVotos(request, id):
     data={
         'votos' : votosOrdenados,
         'categorias':categorias,
+        'categoria':categoria,
     }
     return render(request, 'votos/mostrarVotos.html', data)
 #votar
