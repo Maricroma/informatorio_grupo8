@@ -18,7 +18,7 @@ class PerfilParticipante(models.Model):
     directo = models.TextField(max_length=200, null=True)
 
     def __str__(self):
-        return self.usuario
+        return self.usuario.username
 
 class Participantes(models.Model):
     grupoParticipante =  models.ForeignKey(PerfilParticipante, related_name="participante", on_delete=models.CASCADE)
