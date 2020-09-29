@@ -26,7 +26,7 @@
 				<h3 class="text-center">{{p}}</h3>
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/{{p.directo}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            	<input type="submit" id="{{p.id}}" onclick="votar({{user.id}}, {{p.id}})" value="votar" class="btn btn-primary">
+            	<button id="{{p.id}}" onclick="votar({{user.id}}, {{p.id}})"  class="btn btn-primary"><i class="far fa-heart" style="color: grey;"></i> Votar</button>
             	<p> {% csrf_token %}</p>
 
 			</div>
