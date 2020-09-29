@@ -41,7 +41,7 @@
         {% if categoria == "todos" %}
         <img src="/static/imagenes/bienaldigital.jpg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "madera" %}
-        <img src="/static/imagenes/madera2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="90%">
+        <img src="/static/imagenes/madera2.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "pintura" %}
         <img src="/static/imagenes/pinturas.jpeg" id="imagenCabecera" class="img-fluid" alt="Responsive image" width="100%">
         {% elif categoria  == "metal" %}
@@ -67,7 +67,8 @@
     {% endblock%}
     {% block footer %}
 
-    <footer class="bg-secondary">
+    <footer class="bg-dark">
+        <hr class="bg-white ml-3 mr-3" size=3>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
@@ -84,16 +85,16 @@
                     <div class="container">
                         <ul class="navbar-nav float-right">
                             <li class="nav-item mr-4">
-                                <h6>SEGUINOS</h6>
+                                <h6 class="text-white">SEGUINOS</h6>
                             </li>
                             <li class="nav-item mr-4">
-                                <a class="text-dark" href="#"><i class="fab fa-facebook-square fa-lg"  style="background-color: white; color: #0030ba"></i> Facebook</a><br>
+                                <a class="text-white" href="#"><i class="fab fa-facebook-square fa-lg"  style="background-color: white; color: #0030ba"></i> Facebook</a><br>
                             </li>
                             <li class="nav-item mr-4">
-                                <a class="text-dark" href="#" > <i class="fab fa-instagram-square fa-lg" style="color: #a300ba; background-color: white;"></i> Instagram</a><br>
+                                <a class="text-white" href="#" > <i class="fab fa-instagram-square fa-lg" style="color: #a300ba; background-color: white;"></i> Instagram</a><br>
                             </li>
                             <li class="nav-item float-right">
-                                <a class="text-dark" href="#"><i class="fab fa-youtube-square fa-lg"  style="background-color: #ba1400; color: white;"></i> YouTube</a><br>
+                                <a class="text-white" href="#"><i class="fab fa-youtube-square fa-lg"  style="background-color: #ba1400; color: white;"></i> YouTube</a><br>
                             </li>
                         </ul>
                                 
@@ -101,10 +102,18 @@
                 </div>
             </div>
         </div>
+        <hr class="bg-white ml-3 mr-3" size=3>
 
-        <br>
-        <p class="text-light"><b>Copyright © Bienal del Chaco.</b></p>
-        <address class="text-light">Avenida de los Inmigrantes 1001, Resistencia, Chaco, Argentina.</address>
+        <div class="container row">
+            <p class="text-light my-0">
+                <small> <b>Copyright © Bienal del Chaco.</b> </small>
+            </p>
+            <address class="text-light my-0 mx-2">
+                <small>Avenida de los Inmigrantes 1001, Resistencia, Chaco, Argentina.</small>
+            </address>
+        </div>
+        
+        
     </footer>
         <script src="../static/js/jquery-3.5.1.slim.min.js"></script>
         <script src="../static/js/bootstrap.min.js"></script>
