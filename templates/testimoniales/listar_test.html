@@ -1,0 +1,21 @@
+{% extends 'testimoniales/testimonial.html' %}
+{% load static %}
+{% block comentario %}
+
+<div class="container-fluid">
+    <h4>Comentarios</h4>
+            {% for p in object_list %}
+            
+                <div class="row">
+                    <div class="col-3">
+                        <p id="nombre"><b>{{p.nombre}}</b></p>
+                    </div>
+                    <div class="col-9">
+                        <p id="nombre"><b>"{{p.mensaje}}"</b></p>
+                    </div>
+                </div>                        
+            
+            {% endfor %}
+</div>
+
+{% endblock %}
