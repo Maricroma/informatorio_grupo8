@@ -1,5 +1,5 @@
 
-function confirmarVoto(user_id, video_id) {
+function confirmarVoto(user_id, video_id, elemento) {
 
     Swal.fire({
         title: '¿Estás seguro?',
@@ -11,13 +11,14 @@ function confirmarVoto(user_id, video_id) {
         confirmButtonText: 'Sí, votar',
         cancelButtonText: 'Cancelar'
       }).then((result) => {
+
         if (result.isConfirmed) {
+          votar(user_id, video_id, elemento);
           Swal.fire(
             'Hecho!',
             'Tu voto ha sido registrado.',
             'success',
-            votar(user_id, video_id)
-          )
+          );
         }
       })
 }
@@ -56,5 +57,43 @@ function confrimarRegistro(mensaje){
     title: mensaje,
     showConfirmButton: false,
     timer: 1500
+  })
+}
+
+function errorVotarCategoria(){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'error',
+    title: '¡¡No podes votar en la misma categoria!!'
+  })
+}
+
+function noPodesVotarte(){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'error',
+    title: '¡¡No podes votarte a vos mismo!!!'
   })
 }

@@ -50,16 +50,6 @@ def mostrarVotos(request, id):
     return render(request, 'votos/mostrarVotos.html', data)
 #votar
 
-def votar(request):
-
-    if request.method == 'POST' and request.is_ajax:
-        msg = "The operation  has been recived  correctly "+request.POST
-        print(request.POST)
-    else:
-        msg = "GET petitions are not allowed for tis view"
-
-    return HttpResponse(msg)
-    
 def votar_ajax(request):
     data = request.POST #Guarda los datos recibidos por el método POST en la variable data
     id_video = data['id_video'] #Extrae del dicc data el valor con la key 'id_video'
@@ -82,10 +72,11 @@ def votar_ajax(request):
         try:
             voto.save()
             respuesta = {'id_video': id_video, 'estado': 'ok'}
-        except:
+        except Exception as err:
+            logger.error(str(err))
             respuesta = {'estado': 'error'}
     else:
         respuesta={'estado':'No podes votarte vos mismo!!'}
-
     data = json.dumps(respuesta)
+    logger.info(data)
     return HttpResponse(data, 'application/json')
