@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
     {% block titulo %}
-    <title>Bienal Digital: Ingresar</title>
+       <title>Bienal Digital: Ingresar</title>
     {% endblock %}
 
     {% block main%}
@@ -22,3 +22,12 @@
     </div>
     <br>
     {% endblock %}
+
+    {% block extras_js%}
+        <script src="../static/js/confirmacion.js"></script>
+        {% if success_message %}
+        <script type="text/javascript">
+            window.onload(confrimarRegistro({{success_message}}))
+        </script>
+        {% endif %}
+    {% endblock%}

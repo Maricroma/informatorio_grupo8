@@ -23,3 +23,202 @@ hola
 <QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
 [{'participante': 'Le Correntinos', 'votos': 1}, {'participante': 'EL chaqueño', 'votos': 1}, {'participante': 'informatorio', 'votos': 1}, {'participante': 'Los piratas', 'votos': 1}]
 <QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+madera
+madera
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+madera
+madera
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+arena
+arena
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+pintura
+pintura
+<QuerySet []>
+<QuerySet []>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+metal
+metal
+<QuerySet []>
+<QuerySet []>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+marmol
+marmol
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<<<<<<< HEAD
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: marmol>, <Categoria: metal>, <Categoria: artesani>, <Categoria: pintura>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+<QuerySet [<PerfilParticipante: EL chaqueño>, <PerfilParticipante: Le Correntinos>, <PerfilParticipante: Los piratas>, <PerfilParticipante: Devuelta el rey del pop>, <PerfilParticipante: grupo 8>, <PerfilParticipante: informatorio>]>
+=======
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+<QuerySet [<Categoria: madera>, <Categoria: arena>, <Categoria: metal>, <Categoria: piedra>]>
+todos
+todos
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+<QuerySet [<PerfilParticipante: grupo1>, <PerfilParticipante: grupo2>, <PerfilParticipante: grupo3>, <PerfilParticipante: Correntino>]>
+>>>>>>> 7d5e4783b740c43e6db2046c3f69404314f2121d
