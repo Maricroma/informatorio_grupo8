@@ -2,7 +2,6 @@
 
 {% block main %}
 
-
 <div class="card text-center">
     <div class="card-header">
         {% if user.participante %}
@@ -12,10 +11,37 @@
         <h1>Bienvenido {{user.username}}</h1>
         {% endif%}
     </div>
-    <div class="card-body">
+    <div class="card-body text-white bg-dark">
+        {% if not user.participante %}
+        <h2 class="text-left">Datos de usuario</h2>
+        <p class="text-left">Nombre: {{user.first_name}}</p>
+        <p class="text-left">Apellido: {{user.last_name}}</p>
+        <p class="text-left">Apodo: {{user.username}}</p>
+        <p class="text-left">Email: {{user.email}}</p>
+        <p class="text-left">Genero: {{perfil.sexo}}</p>
+        <p class="text-left">Nacionalidad: {{perfil.nacionalidad}}</p>
+        <p class="text-left">Edad: {{perfil.edad}}</p>
+
+        {% endif %}
+
+        {% if participanteVoto|length > 0 %}
+        <div class="containter no-gutters">
+            <h2 class="text-left">Votos realizados: </h2>
+            <div class="row no-gutters">
+                {% for p in participanteVoto %}
+                <div class=" col-lg-2">
+                    <h5 class="text-center">{{p.nombre}}</h3>
+                    <a data-url="{% url 'eliminarVoto' p.id_voto %}" onclick="confirconfirmarEliminacionmarVoto(this)" class="btn btn-danger">Eliminar</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
         {% if user.participante %}
         <h2 class="card-title">Seccion para participantes</h2>
         <h3>Categoria : {{perfil.categoria}}</h3>
+
         <p class="card-text">En esta sección podran modificar la cantidad de integrandes del grupo, 
             agregarlos, eliminarlos, dar de baja el grupo, entre otras funciones.
         </p>
@@ -47,7 +73,7 @@
                     <th>{{participante.dni}}</th>
                     <th>{{participante.nacionalidad}}</th>
                     <th>{{participante.domicilio}}</th>
-                    <th><a class="btn-sm btn-danger" href=# onclick="confirmarEliminacion({{participante.id}})"> eliminar</a></th>
+                    <th><a class="btn-sm btn-danger" url-data="{% url 'eliminar_participante' participante.id %}" href="#" onclick="confirconfirmarEliminacionmarParticipante(this)"> eliminar</a></th>
                     <th><a class="btn-sm btn-warning" href="{% url 'modificar_participante' participante.id %}">Editar</a></th>
                 </tr>
                 {% endfor %}
@@ -62,6 +88,7 @@
 {% endblock %}
 
 {% block extras_js %}
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="../static/js/eliminar.js"></script>
+<script src="../static/js/confirmacion.js"></script>
 {% endblock %}

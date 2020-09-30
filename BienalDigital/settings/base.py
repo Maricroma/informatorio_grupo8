@@ -30,6 +30,7 @@ LOGIN_REDIRECT_URL= reverse_lazy('inicio')
 LOGOUT_REDIRECT_URL= reverse_lazy('login')
 LOGIN_URL = reverse_lazy('login')
 
+#ALLOWED_HOSTS = [ '192.168.1.186',]
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -15,7 +15,10 @@ function votar(id_usuario, id_video, elemento) {
                 elemento.setAttribute("value","Te gusta")
             }
             else if (x.estado == 'error'){
-                errorVotarCategoria()
+                errorVotarCategoria();
+            }
+            else {
+                noPodesVotarte();
             }
         }
     });

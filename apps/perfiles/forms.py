@@ -29,3 +29,16 @@ class RegistroParticipanteForm(ModelForm):
         participante.save()
 
         return participante
+
+class ParticipanteForm(ModelForm):
+    sexo= forms.ModelChoiceField(queryset=Sexo.objects.all(), empty_label="Genero", widget = forms.Select(attrs={'class':'form-control'})),
+    nacionalidad= forms.ModelChoiceField(queryset=Paises.objects.all(), empty_label="Pais", widget = forms.Select(attrs={'class':'form-control'}))
+
+    class Meta:
+        model = Participantes
+        fields = ['nombre','apellido','edad','sexo','dni','nacionalidad','domicilio'] 
+        widgets = {
+            'nombre':forms.TextInput(attrs={'class':'form-control'}),
+            'apellido':forms.TextInput(attrs={'class':'form-control'}),
+            'domicilio':forms.TextInput(attrs={'class':'form-control'}),
+        }

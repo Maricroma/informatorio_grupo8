@@ -97,3 +97,59 @@ function noPodesVotarte(){
     title: '¡¡No podes votarte a vos mismo!!!'
   })
 }
+
+function confirconfirmarEliminacionmarVoto(elemento) {
+
+  Swal.fire({
+      title: '¿Estás seguro?',
+      text: "¡¡Vas a eliminar el voto!!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+
+      if (result.isConfirmed) {
+        
+        Swal.fire(
+          'Hecho!',
+          'Peticion enviada',
+          'success',
+        );
+        url=$(elemento).attr("data-url")
+        console.log(url)
+        window.location.href=url;
+      }
+
+    })
+}
+
+function confirconfirmarEliminacionmarParticipante(elemento) {
+
+  Swal.fire({
+      title: '¿Estás seguro?',
+      text: "¡¡Vas a eliminar al participante!!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+
+      if (result.isConfirmed) {
+        
+        Swal.fire(
+          'Hecho!',
+          'Peticion enviada',
+          'success',
+        );
+        url=$(elemento).attr("url-data")
+        console.log(url)
+        window.location.href=url;
+      }
+
+    })
+}

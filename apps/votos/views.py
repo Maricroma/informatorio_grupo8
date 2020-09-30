@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Voto, Categoria
 from apps.perfiles.models import PerfilParticipante
 from apps.usuarios.models import Usuario
@@ -80,3 +80,9 @@ def votar_ajax(request):
     data = json.dumps(respuesta)
     logger.info(data)
     return HttpResponse(data, 'application/json')
+
+
+def eliminarVoto(request, id):
+    voto = Voto.objects.get(id=id)
+    voto.delete()
+    return redirect(to="usuario")

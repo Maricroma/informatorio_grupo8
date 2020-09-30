@@ -8,7 +8,7 @@ from .models import Usuario
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login
 from apps.perfiles.models import PerfilParticipante, PerfilVisitante, Participantes
-
+from apps.votos.models import Voto
 #imports para la clase
 from django.views.generic import  CreateView
 from .forms import RegistroUsuarioForm
@@ -30,9 +30,9 @@ def usuario(request):
     data={}
     participantes=None
     perfil=None
+    nombresGrupos=[]
     if user.is_authenticated:
         if user.participante:
-
             perfil=PerfilParticipante.objects.get(usuario_id=user.id)
             participantes= Participantes.objects.filter(grupoParticipante_id=perfil.id)
             data['participantes']=participantes
@@ -40,6 +40,13 @@ def usuario(request):
         else:
             perfil=PerfilVisitante.objects.get(usuario_id=user.id)
         data['perfil']=perfil
+        votos = Voto.objects.filter(votante_id=user.id)
+        for voto in votos:
+            usuario= Usuario.objects.filter(id = voto.votado_id)
+            nombre= usuario[0].username
+            nombre_idVoto={'nombre':nombre, 'id_voto':voto.id}
+            nombresGrupos.append(nombre_idVoto)
+        data['participanteVoto']=nombresGrupos
         return render(request, "usuarios/user.html",data)
     # En otro caso redireccionamos 
     return redirect(to="login")

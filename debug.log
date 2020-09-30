@@ -401,3 +401,23 @@ Madera
 <QuerySet []>
 <QuerySet []>
 >>>>>>> 24566c68c2d221dae2c8e0669b1c51bda8c40226
+[9, 14, 10, 7]
+[9, 14, 10, 7]
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (53, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (53, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[9, 14, 10, 7]
+[9, 14, 10, 7]
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (53, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (53, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[7]
+[7]
+[9, 14]
+[9, 14]
+[]
+[]
+{"id_video": "9", "estado": "ok"}
+{"id_video": "9", "estado": "ok"}
