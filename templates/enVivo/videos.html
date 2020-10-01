@@ -6,7 +6,7 @@
 {% if categoria == "todos" %}
 <h1 class="text-center">Videos en vivo de los participantes</h1>
 {% else %}
-<h1 class="text-center">Videos de la categoria: {{categoria}}</h1>
+<h1 class="text-center text-white">Videos de la categoria: {{categoria}}</h1>
 {% endif %}
 
 {% endblock %}
@@ -18,9 +18,7 @@
 	<a class="btn btn-success" href="{% url 'en_vivos' c.id %}">{{c}}</a>
 	{% endfor %}
 </div>
-{{p.id}}
-{{votos}}
-<div class="container-fluid pt-2">
+<div class="container-fluid pt-2 text-white">
 	<div class="row">
 		{% for p in participantes%}
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

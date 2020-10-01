@@ -10,9 +10,10 @@ function votar(id_usuario, id_video, elemento) {
 
         success: function(x) {
             if (x.estado == 'ok'){
-                document.getElementById(x.id), classList.toggle('btn-primary');
-                document.getElementById(x.id), classList.toggle('btn-success');
-                elemento.setAttribute("value","Te gusta")
+                votoConfirmado();
+            
+                elemento.setAttribute("value","Te gusta");
+                elemento.setAttribute("class","btn btn-success");
             }
             else if (x.estado == 'error'){
                 errorVotarCategoria();

@@ -421,3 +421,369 @@ Madera
 []
 {"id_video": "9", "estado": "ok"}
 {"id_video": "9", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "3", "estado": "ok"}
+{"id_video": "3", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "12", "estado": "ok"}
+{"id_video": "12", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+[]
+[]
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (47, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[12]
+[12]
+[]
+[]
+{"id_video": "14", "estado": "ok"}
+{"id_video": "14", "estado": "ok"}
+[]
+[]
+{"id_video": "29", "estado": "ok"}
+{"id_video": "29", "estado": "ok"}
+[3]
+[3]
+[]
+[]
+{"id_video": "17", "estado": "ok"}
+{"id_video": "17", "estado": "ok"}
+[]
+[]
+[29]
+[29]
+[3]
+[3]
+[14]
+[14]
+[17]
+[17]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "1", "estado": "ok"}
+{"id_video": "1", "estado": "ok"}
+{"id_video": "2", "estado": "ok"}
+{"id_video": "2", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (46, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+{"id_video": "2", "estado": "ok"}
+{"id_video": "2", "estado": "ok"}
+{"id_video": "5", "estado": "ok"}
+{"id_video": "5", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+{"id_video": "14", "estado": "ok"}
+{"id_video": "14", "estado": "ok"}
+{"id_video": "16", "estado": "ok"}
+{"id_video": "16", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 5). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 5). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"id_video": "20", "estado": "ok"}
+{"id_video": "20", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 5). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 5). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"id_video": "28", "estado": "ok"}
+{"id_video": "28", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 2). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 2). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 4). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (45, 4). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+{"id_video": "3", "estado": "ok"}
+{"id_video": "3", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (44, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (44, 3). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"id_video": "4", "estado": "ok"}
+{"id_video": "4", "estado": "ok"}
+{"id_video": "17", "estado": "ok"}
+{"id_video": "17", "estado": "ok"}
+{"id_video": "30", "estado": "ok"}
+{"id_video": "30", "estado": "ok"}
+{"id_video": "27", "estado": "ok"}
+{"id_video": "27", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (44, 6). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (44, 6). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+{"id_video": "12", "estado": "ok"}
+{"id_video": "12", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "5", "estado": "ok"}
+{"id_video": "5", "estado": "ok"}
+[]
+[]
+{"id_video": "31", "estado": "ok"}
+{"id_video": "31", "estado": "ok"}
+[]
+[]
+{"id_video": "3", "estado": "ok"}
+{"id_video": "3", "estado": "ok"}
+[]
+[]
+{"id_video": "14", "estado": "ok"}
+{"id_video": "14", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "17", "estado": "ok"}
+{"id_video": "17", "estado": "ok"}
+[]
+[]
+{"id_video": "27", "estado": "ok"}
+{"id_video": "27", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "5", "estado": "ok"}
+{"id_video": "5", "estado": "ok"}
+[]
+[]
+{"id_video": "29", "estado": "ok"}
+{"id_video": "29", "estado": "ok"}
+[]
+[]
+{"id_video": "10", "estado": "ok"}
+{"id_video": "10", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "4", "estado": "ok"}
+{"id_video": "4", "estado": "ok"}
+[]
+[]
+{"id_video": "31", "estado": "ok"}
+{"id_video": "31", "estado": "ok"}
+[]
+[]
+{"id_video": "3", "estado": "ok"}
+{"id_video": "3", "estado": "ok"}
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+[]
+[]
+[11]
+[11]
+[]
+[]
+[]
+[]
+{"id_video": "19", "estado": "ok"}
+{"id_video": "19", "estado": "ok"}
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+[]
+[]
+{"id_video": "31", "estado": "ok"}
+{"id_video": "31", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "4", "estado": "ok"}
+{"id_video": "4", "estado": "ok"}
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+[]
+[]
+{"id_video": "21", "estado": "ok"}
+{"id_video": "21", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+[]
+[]
+{"id_video": "17", "estado": "ok"}
+{"id_video": "17", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "13", "estado": "ok"}
+{"id_video": "13", "estado": "ok"}
+[]
+[]
+[]
+[]
+{"id_video": "4", "estado": "ok"}
+{"id_video": "4", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 1). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+{"id_video": "11", "estado": "ok"}
+{"id_video": "11", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 7). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+{"id_video": "26", "estado": "ok"}
+{"id_video": "26", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 6). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (49, 6). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+{"id_video": "31", "estado": "ok"}
+{"id_video": "31", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "1", "estado": "ok"}
+{"id_video": "1", "estado": "ok"}
+[]
+[]
+[]
+[]
+[]
+[]
+{"id_video": "13", "estado": "ok"}
+{"id_video": "13", "estado": "ok"}
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (50, 4). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert duplicate key row in object 'dbo.votos_voto' with unique index 'votos_voto_votante_id_categoria_id_94264d64_uniq'. The duplicate key value is (50, 4). (2601) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+{"estado": "error"}
+{"estado": "error"}
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]

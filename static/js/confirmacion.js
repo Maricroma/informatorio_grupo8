@@ -16,7 +16,7 @@ function confirmarVoto(user_id, video_id, elemento) {
           votar(user_id, video_id, elemento);
           Swal.fire(
             'Hecho!',
-            'Tu voto ha sido registrado.',
+            'Tu voto esta siendo procesado.',
             'success',
           );
         }
@@ -97,6 +97,24 @@ function noPodesVotarte(){
     title: '¡¡No podes votarte a vos mismo!!!'
   })
 }
+function votoConfirmado(){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'success',
+    title: '¡¡Se ha votado!!!'
+  })
+}
 
 function confirconfirmarEliminacionmarVoto(elemento) {
 
@@ -153,3 +171,5 @@ function confirconfirmarEliminacionmarParticipante(elemento) {
 
     })
 }
+
+

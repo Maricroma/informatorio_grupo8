@@ -30,7 +30,7 @@ LOGIN_REDIRECT_URL= reverse_lazy('inicio')
 LOGOUT_REDIRECT_URL= reverse_lazy('login')
 LOGIN_URL = reverse_lazy('login')
 
-#ALLOWED_HOSTS = [ '192.168.1.186',]
+ALLOWED_HOSTS = ['23a366252562.ngrok.io']
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
