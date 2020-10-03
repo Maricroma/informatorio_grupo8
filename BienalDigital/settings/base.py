@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.urls import reverse_lazy
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,24 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'h0wdv_l@epjed!xd*wg=o-5d^s)m!!2syx-59bm5xdey#$s9n8'
 
-DEBUG = False
-
 
 AUTH_USER_MODEL= 'usuarios.Usuario'
 LOGIN_REDIRECT_URL= reverse_lazy('inicio')
 LOGOUT_REDIRECT_URL= reverse_lazy('login')
 LOGIN_URL = reverse_lazy('login')
 
-ALLOWED_HOSTS = ['*']
-
-import dj_database_url
-from decouple import config
-
-DATABASE = {
-    'degault':dj_database_url.config(
-        default = config('DATABASE_URL')
-    )
-}
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -69,11 +59,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenose.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'BienalDigital.urls'
-#MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -136,5 +124,3 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
-
-#STATICFILE_STORAGE = 'whitenose.storage.CompressedManifestStaticFilesStorage'
