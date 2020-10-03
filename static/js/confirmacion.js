@@ -1,4 +1,3 @@
-
 function confirmarVoto(user_id, video_id, elemento) {
 
     Swal.fire({
@@ -143,6 +142,17 @@ function confirconfirmarEliminacionmarVoto(elemento) {
 
     })
 }
+function reemplazarConVideo(elemento){
+  url = $(elemento).attr("url-data")
+  console.log(url)
+  id = $(elemento).attr("id")
+  $( '<iframe id="'+id+'" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;   gyroscope; picture-in-picture" allowfullscreen></iframe>' ).replaceAll( "#"+id );
+  console.log(id)
+  $("#"+id).attr("src",url)
+  console.log(url)
+
+
+}
 
 function confirconfirmarEliminacionmarParticipante(elemento) {
 
@@ -171,5 +181,4 @@ function confirconfirmarEliminacionmarParticipante(elemento) {
 
     })
 }
-
 

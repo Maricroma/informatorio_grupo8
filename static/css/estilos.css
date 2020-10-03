@@ -33,3 +33,7 @@
 footer{
     height: 100px;
 }
+
+.yimg:hover {
+    cursor: crosshair;
+}

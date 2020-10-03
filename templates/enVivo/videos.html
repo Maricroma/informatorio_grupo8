@@ -24,7 +24,13 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h3 class="text-center">{{p}}</h3>
 
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/{{p.directo}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<img src="http://img.youtube.com/vi/{{p.directo}}/mqdefault.jpg"
+					url-data="https://www.youtube.com/embed/{{p.directo}}"
+					style="width: 560px; height: 315px; cursor: pointer;" onclick="reemplazarConVideo(this)" 
+					id="img{{p.id}}" alt="miniatura"  class="imgy">
+				<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/{{p.directo}}" 
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+					gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 				{% if p.id in votos %}
 				<input type="button" id="{{p.id}}" value="Te gusta" class="btn btn-success">
 				{% else %}
