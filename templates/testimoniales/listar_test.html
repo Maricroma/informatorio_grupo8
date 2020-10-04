@@ -4,18 +4,23 @@
 
 <div class="container-fluid">
     <h4>Comentarios</h4>
-            {% for p in object_list %}
-            
-                <div class="row">
-                    <div class="col-3">
-                        <p id="nombre"><b>{{p.nombre}}</b></p>
-                    </div>
-                    <div class="col-9">
-                        <p id="nombre"><b>"{{p.mensaje}}"</b></p>
-                    </div>
-                </div>                        
-            
-            {% endfor %}
+
+    <table class="table" style="background-color: #a7a7a7;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Mensaje</th>
+            </tr>
+            <tbody>
+                {% for p in object_list %}
+                <tr>
+                    <th>{{p.nombre}}</th>
+                    <th>{{p.mensaje}}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </thead>
+    </table>
 </div>
 
 {% endblock %}

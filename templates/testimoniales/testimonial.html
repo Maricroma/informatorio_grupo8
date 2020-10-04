@@ -7,48 +7,60 @@
     <link rel="stylesheet" href="/static/css/newstilos.css">
     <link rel="stylesheet" href="/static/fontawesome/css/all.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="icon" type="image/ico" href="/static/imagenes/icono.png" />
     <title>Testimoniales</title>
 </head>
 <body class="bg-secondary">
     <header>
-        <div class="container-fluid">
-            <nav id="main" class="navbar navbar-expand-lg">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-4">
-                        <a class="btn btn-secondary" href="{% url 'inicio' %}">INICIO</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <a class="btn btn-secondary mb-1" href="{% url 'inicio' %}">
+                <img src="/static/imagenes/icono.png" width="50" height="50" class="d-inline-block align-centre" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-2 mb-1">
+                        <a class="btn btn-secondary" href="{% url 'inicio' %}"><i class="fas fa-home"></i> Inicio</a>
                     </li>
-                    <li class="nav-item mr-4">
-                        <a class="btn btn-secondary" href="{% url 'registroParticipante' %}">Participar</a>
+                    <li class="nav-item mr-2 mb-1">
+                        <a class="btn btn-secondary" href="{% url 'registroParticipante' %}"><i class="fas fa-file-signature"></i> Participar</a>
                     </li>
-                    <li class="nav-item mr-4">
-                        <a class="btn btn-secondary" href="{% url 'mostrarVotos' 0 %}">Ranking</a>
+                    <li class="nav-item mr-2 mb-1">
+                        <a class="btn btn-secondary" href="{% url 'mostrarVotos' 0 %}"><i class="fas fa-trophy"></i> Ranking</a>
                     </li>
-                    <li class="nav-item mr-4">
-                        <a class="btn btn-danger" href="{% url 'mostrarVotos' 0 %}">En vivo</a>
+                    <li class="nav-item mr-2 mb-1">
+                        <a class="btn btn-danger" href="{% url 'mostrarVotos' 0 %}"><i class="fas fa-video"></i> En vivo</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav float-right">
-                    {% if user.is_authenticated %}
-                    {% if user.participante%}
-                    <li class="nav-item mr-2"><a class="btn btn-dark" href="{% url 'usuario' %}"><i
-                                class="fas fa-users-cog"></i> Bienvenido {{user.username}}</a></li>
-                    {% endif %}
-                    {% if not user.participante%}
-                    <li class="nav-item mr-2"><a class="btn btn-dark" href="{% url 'usuario' %}"><i
-                                class="fas fa-user-cog"></i> Bienvenido {{user.username}}</a></li>
-                    {% endif %}
-                    <li class="nav-item mr-4"><a class="btn btn-dark" href="{% url 'logout' %}"><i
-                                class="fas fa-user-times"></i> Salir</a></li>
-                    {% endif %}
-                    {% if not user.is_authenticated %}
-                    <li class="nav-item mr-4"><a class=" btn btn-dark" href="{% url 'login' %}"><i
-                                class="fas fa-user-alt"></i> Ingresar</a></li>
-                    <li class="nav-item float-right"><a class="btn btn-dark" href="{% url 'registrar' %}"> <i
-                                class="fas fa-user-plus"></i> Registrarse</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-        </div>
+            </div>
+            <ul class="navbar-nav align-items-end">
+                {% if user.is_authenticated %}
+                {% if user.participante%}
+                <li class="nav-item mr-2 mb-1">
+                    <a class="btn btn-dark" href="{% url 'usuario' %}"><i class="fas fa-users-cog"></i> Hola {{user.username}}</a>
+                </li>
+                {% endif %}
+                {% if not user.participante%}
+                <li class="nav-item mr-2 mb-1">
+                    <a class="btn btn-dark" href="{% url 'usuario' %}"><i class="fas fa-user-cog"></i> Hola {{user.username}}</a>
+                </li>
+                {% endif %}
+                <li class="nav-item mr-2 mb-1">
+                    <a class="btn btn-dark" href="{% url 'logout' %}"><i class="fas fa-user-times"></i> Salir</a>
+                </li>
+                {% endif %}
+                {% if not user.is_authenticated %}
+                <li class="nav-item mr-2 mb-1">
+                    <a class=" btn btn-dark" href="{% url 'login' %}"><i class="fas fa-user-alt"></i> Ingresar</a>
+                </li>
+                <li class="nav-item mr-2 mb-1">
+                    <a class="btn btn-dark" href="{% url 'registrar' %}"> <i class="fas fa-user-plus"></i> Registrarse</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
     </header>
     <div class="bg-dark">
         <div id="div">
@@ -63,90 +75,84 @@
             </div>
             <div class="col-9">
                 <p id="texto">
-                    Regresé a Buenos Aires donde me esperaban mis seres queridos. Sin embargo sentí la nostalgia de seguir compartiendo con
-                    decenas de creadores y miles de espectadores que me brindaron montones de afectos. El abrazo grande y generoso del
-                    maestro FABRICIANO a quien se le hicieron realidad sus sueños. A MIMO compañera de caminos A sus colaboradores de la
-                    Fundación URUNDAY que impusieron su compromiso para que esa BIENAL saliera como salió. LA MEJOR DEL MUNDO en esculturas.
-                    A quienes contribuyeron con aportes devolviendo a RESISTENCIA lo que ella les dio. Al pueblo de la Ciudad que participó
-                    de las bellezas que obraron los artistas concurrentes. Niños, jóvenes y ancianos que se acercaron a convivir y
-                    comprender los mensajes de los escultores. A todos ellos extrañaré por siempre en el recuerdo de esos días
-                    impresionantes. A mí también se me hizo realidad el sueño de dejar mi alma de escultora en la ciudad junto a los grandes
-                    del arte escultórico. Por todo ello muchas gracias y que mi deseo sobre la profecía se haga realidad en el mundo: Un
-                    nuevo amanecer. Saludos!!
+                    Regresé a Buenos Aires donde me esperaban mis seres queridos. Sin embargo sentí la nostalgia de seguir compartiendo con decenas de creadores y miles de espectadores que me brindaron montones de afectos. El abrazo grande y generoso del maestro FABRICIANO a quien se le hicieron realidad sus sueños. A MIMO compañera de caminos A sus colaboradores de la Fundación URUNDAY que impusieron su compromiso para que esa BIENAL saliera como salió. LA MEJOR DEL MUNDO en esculturas.
+                    A quienes contribuyeron con aportes devolviendo a RESISTENCIA lo que ella les dio. Al pueblo de la Ciudad que participó de las bellezas que obraron los artistas concurrentes. Niños, jóvenes y ancianos que se acercaron a convivir y comprender los mensajes de los escultores. A todos ellos extrañaré por siempre en el recuerdo de esos días impresionantes. A mí también se me hizo realidad el sueño de dejar mi alma de escultora en la ciudad junto a los grandes del arte escultórico. Por todo ello muchas gracias y que mi deseo sobre la profecía se haga realidad en el mundo: Un nuevo amanecer. Saludos!!
                 </p>
             </div>
         </div>
+        
 {% block comentario %}
 
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-dark" href="{% url 'lista_test' %}">Más comentarios</a>
+    </div>
+<br>
         <div class="row justify-content-md-center">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <h4>Envianos tu Comentario</h4>
                 <form method="POST">{% csrf_token %}
                     {{ form | crispy }}
                     <div class="float-right">
-                        <input type="submit" value="Crear" class="btn btn-success">
-                    </div>
-                    <div class="float-left">
-                        <a class="btn btn-dark" href="{% url 'lista_test' %}">Más comentarios</a>
+                        <input type="reset" value="Borrar" class="btn btn-danger">
+                        <input type="submit" value="Enviar" class="btn btn-success">
                     </div>
                 </form>
             </div>
         </div>
 {% endblock %}
     </main>
-        <footer class="bg-dark">
-            <hr class="bg-white ml-3 mr-3" size=3>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <a class="text-light" href="#">Programa</a><br>
-                        <a class="text-light" href="#">Participantes</a><br>
-                        <a class="text-light" href="#">Premio Desafío</a><br>
-                        <a class="text-light" href="{% url 'testimonial' %}">Testimoniales</a><br>
-                    </div>
-                    <div class="col-lg-4">
-                        <a class="text-light" href="{% url 'contacto' %}">Contacto</a><br>
-                        <a class="text-light" href="{% url 'historia' %}">Resistencia, Ciudad de las Esculturas</a><br>
-                        <a class="text-light" href="http://www.fundacionurunday.org/" target="_blank">Fundación Urunday</a><br>
-                        <a class="text-light" href="https://chaco.gov.ar/" target="_blank">Chaco, Gobierno de Todos</a><br>
-        
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <ul class="navbar-nav float-right">
-                                <li class="nav-item mr-4">
-                                    <h6 class="text-white">SEGUINOS</h6>
-                                </li>
-                                <li class="nav-item mr-4">
-                                    <a class="text-white" href="https://www.facebook.com/bienaldelchaco"><i class="fab fa-facebook-square fa-lg"
-                                            style="background-color: white; color: #0030ba"></i> Facebook</a><br>
-                                </li>
-                                <li class="nav-item mr-4">
-                                    <a class="text-white" href="https://www.instagram.com/bienaldelchaco/?hl=es-la"> <i class="fab fa-instagram-square fa-lg"
-                                            style="color: #a300ba; background-color: white;"></i> Instagram</a><br>
-                                </li>
-                                <li class="nav-item float-right">
-                                    <a class="text-white" href="https://www.youtube.com/BienaldelChaco"><i class="fab fa-youtube-square fa-lg"
-                                            style="background-color: #ba1400; color: white;"></i> YouTube</a><br>
-                                </li>
-                            </ul>
-        
-                        </div>
+    <footer class="bg-dark">
+        <hr class="bg-white ml-3 mr-3" size=3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 mx-5">  
+                    <a class="text-light" href="#">Programa</a><br>
+                    <a class="text-light" href="#">Participantes</a><br>
+                    <a class="text-light" href="#">Premio Desafío</a><br>
+                    <a class="text-light" href="{% url 'testimonial' %}">Testimoniales</a><br>
+                </div>
+                <div class="col-lg-3 mx-5">
+                    <a class="text-light" href="{% url 'contacto' %}">Contacto</a><br>
+                    <a class="text-light" href="{% url 'historia' %}">Resistencia, Ciudad de las Esculturas</a><br>
+                    <a class="text-light" href="http://www.fundacionurunday.org/" target="_blank">Fundación Urunday</a><br>
+                    <a class="text-light" href="https://chaco.gov.ar/" target="_blank">Chaco, Gobierno de Todos</a><br>
+                    
+                </div>
+                <div class="col-lg-3 mx-5">
+                    <div class="container">
+                        <ul class="navbar-nav float-right">
+                            <li class="nav-item mr-4">
+                                <h6 class="text-white">SEGUINOS</h6>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="text-white" href="https://www.facebook.com/bienaldelchaco"><i class="fab fa-facebook-square fa-lg"  style="background-color: white; color: #0030ba"></i> Facebook</a><br>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="text-white" href="https://www.instagram.com/bienaldelchaco/?hl=es-la" > <i class="fab fa-instagram-square fa-lg" style="color: #a300ba; background-color: white;"></i> Instagram</a><br>
+                            </li>
+                            <li class="nav-item float-right">
+                                <a class="text-white" href="https://www.youtube.com/BienaldelChaco"><i class="fab fa-youtube-square fa-lg"  style="background-color: #ba1400; color: white;"></i> YouTube</a><br>
+                            </li>
+                        </ul>
+                                
                     </div>
                 </div>
             </div>
-            <hr class="bg-white ml-3 mr-3" size=3>
+        </div>
+        <hr class="bg-white ml-3 mr-3" size=3>
+
+        <div class="container row">
+            <p class="text-light my-0">
+                <small> <b>Copyright © Bienal del Chaco.</b> </small>
+            </p>
+            <address class="text-light my-0 mx-2">
+                <small>Avenida de los Inmigrantes 1001, Resistencia, Chaco, Argentina.</small>
+            </address>
+        </div>
         
-            <div class="container row">
-                <p class="text-light my-0">
-                    <small> <b>Copyright © Bienal del Chaco.</b> </small>
-                </p>
-                <address class="text-light my-0 mx-2">
-                    <small>Avenida de los Inmigrantes 1001, Resistencia, Chaco, Argentina.</small>
-                </address>
-            </div>
-        </footer>
-    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+        
+    </footer>
+    <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/popper.min.js"></script>
 </body>
